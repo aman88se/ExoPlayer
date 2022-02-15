@@ -6,6 +6,12 @@ plugins {
 android {
     compileSdk 32
 
+
+    buildFeatures{
+
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId "com.semsols.exoplayer"
         minSdk 21
@@ -43,4 +49,7 @@ dependencies {
 
     //ExoPlayer
     implementation 'com.google.android.exoplayer:exoplayer:2.16.1'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.16.1'
+    apply plugin: 'kotlin-android'
+    apply plugin: 'kotlin-android-extensions'
 }
